@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" type = "text/css" href="home.css">
+    <script type="text/javascript"src="home.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script> 
+
+	$(document).ready(function(){
+  var mouseX, mouseY;
+  var ww = $( window ).width();
+  var wh = $( window ).height();
+  var traX, traY;
+  $(document).mousemove(function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 40;
+    traY = ((4 * mouseY) / 570) + 50;
+    console.log(traX);
+    $(".title").css({"background-position": traX + "%" + traY + "%"});
+  });
+});
+
+		</script>
+		
+<body>
+	<ul>
+  <li><a class="active" href="web.html">HOME</a></li>
+  <li><a href="aboutme.html">ABOUT ME</a></li>
+  <li><a href="spotify.html">MY PROJECTS</a></li>
+	<li><a href="involved.html">CONTACT</a></li>
+</ul>
+<div class="container">
+ <div class="title">SHRIYA <br> NANDWANI</div>
+	  <div class="subtitle"> PORTFOLIO OF A GIRL WHO CODES </div>
+</div>
+	
+</body>
+
+<html>

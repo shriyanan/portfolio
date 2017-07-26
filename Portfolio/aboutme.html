@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" type = "text/css" href="aboutme.css">
+    <script type="text/javascript"src="aboutme.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script> 
+
+	$(document).ready(function(){
+  var mouseX, mouseY;
+  var ww = $( window ).width();
+  var wh = $( window ).height();
+  var traX, traY;
+  $(document).mousemove(function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 40;
+    traY = ((4 * mouseY) / 570) + 50;
+    console.log(traX);
+    $(".title").css({"background-position": traX + "%" + traY + "%"});
+  });
+});
+
+		</script>
+		
+<body>
+	<ul>
+  <li><a  href="home.html">HOME</a></li>
+  <li><a class="active" href="aboutme.html">ABOUT ME</a></li>
+  <li><a href="spotify.html">MY PROJECTS</a></li>
+	<li><a href="involved.html">CONTACT</a></li>
+</ul>
+<h1>
+    <div class="container">
+ <div class="title">ABOUT ME</div>
+	  <div class="subtitle"> LEARN ABOUT THE GREATNESS </div>
+</div>
+	</h1>
+  <img src="https://s32.postimg.org/gsss7r0r9/Screen_Shot_2016_07_05_at_10_36_52_PM.png"/>
+    
+    <body>
+<p>
+    Shriya Nandwani is a young teen trying to find her way in the world, excited by the fields of computer science and entreprenuership. 
+    
+    One thing Shriya knows is that whatever she decides to do with her life, she knows that she wants to make a positive difference in the large world we live in.
+    
+    Shriya's hobbies include playing golf, voicing her political opinions, volunteering,  being a part of her school's speech & debate team, hanging out with her friends, and of course coding (like she did this website)!
+        </p>
+
+
+</body>
+
+<html>

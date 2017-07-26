@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+	<link rel="stylesheet" type = "text/css" href="my.Styles.css">
+		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+ 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+		<script type="text/javascript"src="myjs.js"></script>
+<!--		//<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+ 
+
+    
+		<script>
+			function changeImage(){
+				var pic = document.getElementById('myImage');
+				if (pic.src.match("snowrain.png")){	
+					pic.src = "dizzy.jpg";
+				}
+				else {
+					pic.src = "snowrain.png";
+				}
+			}
+			function changeImage1(){
+				var pic1 = document.getElementById('myImage1');
+				if (pic1.src.match("https://s31.postimg.org/472t998y3/bouncebounce.jpg")){
+					pic1.src = "calling.png";
+				}
+				else { 
+					pic1.src = "https://s31.postimg.org/472t998y3/bouncebounce.jpg";
+				}
+			}
+		</script>
+     </head>
+  <body>
+	<h1>
+	  <div class="container">
+	 
+       <div id="title">SHRIYA NANDWANI</div> 
+       <div id="subtitle"> JUST A GIRL WHO CODES </div>
+
+	  </div>
+		</h1>
+    <h4>.... bouncing balls program ....</h4>
+    <p> Coded using Python, this code essentially allows a user to input any number of balls they would like, and the program will show that number of balls bouncing across a screen, flashing in different colors. </p>
+    <p style="text-align:center;">
+	<img id="myImage1" src = "https://s31.postimg.org/472t998y3/bouncebounce.jpg" accesskey=""> 
+	   <button id = "button1" onclick = "changeImage1()"> input number of balls </button></p>
+	  
+	  
+    </body>
+   <a href="bouncing_call2.py">Bouncing Ball Code</a>
+   <h4> <br>.... snowflakes program ....</h4>
+   <p> Coded using Python, this code allows snowflakes to sprinkle on an image. </p>
+   <p style="text-align:center;">
+   <img id="myImage" src = "snowrain.png"<br>> 
+	   <button id = "button" onclick = "changeImage()"> see original </button>
+									  </p>
+      <a href="snowflake.py">Snowflake Code</a>
+</body>
+

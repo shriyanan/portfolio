@@ -1,0 +1,104 @@
+h1 {
+display: inline;
+font-size: 50
+letter-spacing: -3px; /* This will push it together giving us a nice 3D vibe */
+color: rgba(0,0,250,0.5); /* This will give us a blue at 50% opacity */
+}
+h1:after {
+content: “Anaglyph”;
+position: absolute;
+left: 8px; top: 6px; /* These are aligning it to be where we’d like relative to the last word */
+color: rgba (255,0,0,0.5); /* This gives us a red at 50% opacity */
+}
+
+h4{
+	/* Using the custom font we've included in the HTML tab: */
+	font-size:32px;
+	margin-left: 40px
+	letter-spacing: -1px;
+	padding-top: 60px;
+	border-bottom: 4px dotted #009999;
+	display: inline;
+	color: rgba(9, 6, 28, 0.76)
+
+	
+	
+}
+
+img{ 
+max-height: 400px
+	
+}
+
+@mixin center(){
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,800,900);
+html{
+  width:100%;
+  height: 100%;
+}
+body{
+  background-color: aliceblue;
+  margin: 0;
+  width: 20;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+.container{
+  
+  @include center();
+}
+#title{
+  font-weight: 700;
+  color: transparent;
+  font-size:120px;
+  background: url("http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position:relative;
+  text-align:center;
+  line-height:120px;
+  letter-spacing: -8px;
+}
+#subtitle{
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:10px;
+}
+button {
+    margin-c
+	background-color: #6495ED; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid #6495ED;
+	
+}
+
+button:hover {
+    background-color: #6495ED;
+    color: white;
+}
+
+@charset "utf-8";
